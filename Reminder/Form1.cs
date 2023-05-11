@@ -84,12 +84,9 @@ namespace Reminder
 
         private void btn_setReminder_Click(object sender, EventArgs e)
         {
-            //string ReminderDate = dtp_date.Value.ToShortDateString();
-            //string ReminderTime = dtp_clock.Value.ToShortTimeString();
 
             var Reminder = new DateTime(dtp_date.Value.Year, dtp_date.Value.Month, dtp_date.Value.Day, dtp_clock.Value.Hour, dtp_clock.Value.Minute, 0);
 
-            //MessageBox.Show("Reminder set to " + ReminderDate + " " + ReminderTime);
             MessageBox.Show("Reminder set to " + Reminder.ToString());
 
             while (true)
